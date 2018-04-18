@@ -1,11 +1,105 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<title class="title">F1 Stories - HOME PAGE</title>
+		
 		<meta charset="utf-8">
-		<title class="title">F1 Stories</title>
-		<link rel="icon" type="image/png" href="images/F1.png" />
 		<meta name="description" content="">
 		<meta name="viewport" content="width=device-width">
-	</head>
 
+        <link rel="stylesheet" href="css/templatemo_style.css">
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:3x00italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.14.1/moment.min.js"></script>
+		<link rel="icon" type="image/png" href="images/F1.png"/>
+        <link rel="stylesheet" href="css/font-awesome.css">
+		<link rel="stylesheet" href="css/header.css">
+		<link rel="stylesheet" href="css/media.css">
+		<link rel="stylesheet" href="css/form.css">
+		<link rel="stylesheet" href="css/fonts.css">
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<link href="css/templatemo_style.css" rel="stylesheet" type="text/css">	
+	</head>
+	<body>
+		<header>
+			<div id="top-header">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="home-account">
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="cart-info">
+								<span id="dtText"></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="templatemo-bg-image-1">
+			<div class="container">
+					<div class="col-md-12">
+						<div id="product-heading">
+							<h2>Sign in</h2>
+							<img src="images/under-heading1.jpg" alt="" >
+							<form class="form-horizontal templatemo-login-form-2" role="form" action="sign_in" method="post">
+								<div class="form-inner">
+									<div class="row">
+										<div class="container col-md-21">
+											<div class="templatemo-one-signin col-md-12">
+												<div class="form-group">
+													<div class="col-md-12">
+														<label for="username" class="control-label">Login name:</label>
+														<div class="templatemo-input-icon-container">
+															<i class="fa fa-user"></i>
+															<input type="text" class="form-control" name="username" placeholder="Login name:" reqiured>
+														</div>
+													</div>
+												</div>
+												<div class="form-group">
+													<div class="col-md-12">
+														<label for="password" class="control-label">Password:</label>
+														<div class="templatemo-input-icon-container">
+															<i class="fa fa-lock"></i>
+															<input type="password" class="form-control" name="password" placeholder="Password:" reqiured>
+														</div>
+													</div>
+												</div>
+												<div class="form-group">
+													<div class="col-md-12">
+														<input type="submit" value="Sign in" class="btn btn-warning">
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</form>
+							<form class="form-horizontal templatemo-login-form-2" role="form" action="sign_up" method="post">
+								<div class="form-inner">
+									<div class="row">
+										<div class="container col-md-21">
+											<div class="templatemo-one-signin col-md-12">
+												<div class="form-group">
+													<div class="col-md-12">
+														<input type="submit" value="Sign up" class="btn btn-warning">
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
 </html>
+
+<script language='javascript' type='text/javascript'>
+	var today = new Date();
+	document.getElementById('dtText').innerHTML = today;
+</script>

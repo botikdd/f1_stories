@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title class="title">F1 Stories - Registration</title>
+		
+		<meta charset="utf-8">
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width">
+
+        <link rel="stylesheet" href="css/templatemo_style.css">
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:3x00italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.14.1/moment.min.js"></script>
+		<link rel="icon" type="image/png" href="images/F1.png"/>
+        <link rel="stylesheet" href="css/font-awesome.css">
+		<link rel="stylesheet" href="css/header.css">
+		<link rel="stylesheet" href="css/media.css">
+		<link rel="stylesheet" href="css/form.css">
+		<link rel="stylesheet" href="css/fonts.css">
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<link href="css/templatemo_style.css" rel="stylesheet" type="text/css">	
+	</head>
+	<body>
+		<header>
+			<div id="top-header">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="home-account">
+								<a href='index.html'>Home</a>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="cart-info">
+								<span id="dtText"></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="templatemo-bg-image-1">
+			<div class="container">
+					<div class="col-md-12">
+						<div id="product-heading">
+							<h2>Sign up</h2>
+							<img src="images/under-heading1.jpg" alt="" >
+							<form class="form-horizontal templatemo-create-account templatemo-container" role="form" action="registration" method="post" style=(text-align: "center;")>
+								<div class="form-inner">
+									<div class="form-group">
+										<div class="col-md-6">
+											<label for="k_nev" class="control-label">First Name</label>
+											<div class="col-md-20">
+												<i class="fa fa-arrow-right"></i>
+												<input type="text" class="form-control" name="f_name" maxlength="20" placeholder="First Name" required charset="utf8-hungarian-ci">
+											</div>
+										</div>  
+										<div class="col-md-6">
+											<label for="cs_nem" class="control-label">Last Name</label>
+											<div class="col-md-20">
+												<i class="fa fa-arrow-left"></i>
+												<input type="text" class="form-control" name="l_name" maxlength="20" placeholder="Last Name" required charset="utf8-hungarian-ci">
+											</div>
+										</div>
+									</div>
+									<div class="form-group">
+										<div class="col-md-6">
+											<label for="e_ler" class="control-label">E-mail</label>
+											<div class="col-md-20">
+												<i class="fa fa-android"></i>
+												<input type="email" class="form-control" id="email" name="email" maxlength="50" placeholder="E-mail" required>
+											</div>
+										</div>
+										<div class="col-md-6">
+											<label for="e_ler" class="control-label">E-mail</label>
+											<div class="col-md-20">
+												<i class="fa fa-android"></i>
+												<input type="email" class="form-control" id="email_confirm" name="email_confirm" maxlength="50" placeholder="E-mail again" required oninput="check(this, 'email', 'Two emails must be matching!')">
+											</div>
+										</div>
+									</div>
+									<div class="form-group">
+										<div class="col-md-6">
+											<label for="f_nev" class="control-label">User Name</label>
+											<div class="col-md-20">
+												<i class="fa fa-user"></i>
+												<input type="text" class="form-control" name="username" maxlength="30" placeholder="Username" required>
+											</div>
+										</div>
+									</div>
+									<div class="form-group">
+										<div class="col-md-6">
+											<label for="jel1" class="control-label">Password</label>
+											<div class="col-md-20">
+												<i class="fa fa-lock"></i>
+												<input type="password" class="form-control" id="passwd" name="passwd" maxlength="20" placeholder="Password" required charset="utf8-hungarian-ci">
+											</div>
+										</div>
+										<div class="col-md-6">
+											<label for="jel2" class="control-label">Confirm Password</label>
+											<div class="col-md-20">
+												<i class="fa fa-lock"></i>
+												<input type="password" class="form-control" name="passwd_confirm" maxlength="20" placeholder="Confirm password" required charset="utf8-hungarian-ci" oninput="check(this, 'passwd', 'Two emails must be matching!')">
+											</div>
+										</div>
+									</div>
+									<div class="form-group">
+										<div class="col-md-6">
+											<label><input type="checkbox" name="pont" required> I'll accept the <a href="javascript:;" data-toggle="modal" data-target="#templatemo_modal">user requirements</a></label>
+										</div>
+									</div>
+									<div class="form-group">
+										<div class="col-md-6">
+											<input type="submit" value="Create account" class="btn btn-info">
+										</div>
+										<div class="col-md-6">
+											<input type="reset" value="Refresh" class="btn btn-info">
+										</div>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+
+
+<script language='javascript' type='text/javascript'>
+	function check(input, element_id, message) {
+		if (input.value != document.getElementById(element_id).value) {
+			input.setCustomValidity(message);
+		} else {
+			input.setCustomValidity('');
+		}
+	}
+
+	var today = new Date();
+	document.getElementById('dtText').innerHTML = today;
+
+	//error: function(error){
+    //      if(error.responseText == 'showAlert')
+    //          alert("Please enter correct user name and password.")
+</script>

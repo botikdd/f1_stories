@@ -1,0 +1,46 @@
+/*-- Header --*/
+#top-header {
+  background-color: #333;
+  color: #fff;
+}
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.row {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.container:before, .container:after,
+.row:before, .row:after {
+	display: table;
+	content: " ";
+}
+
+.container:after,
+.row:after {
+	clear: both;
+}
+
+.home-account a {
+  display: inline-block;
+  margin-right: 15px;
+  padding: 10px 0;
+  font-size: 13px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #f78e21;
+}
+
+a:hover {
+  text-decoration: none;
+  color: red;
+}

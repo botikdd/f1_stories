@@ -1,0 +1,52 @@
+@media (min-width: 768px) {
+	.container {
+		width: 750px;
+	}
+
+	.navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
+		margin-left: -15px;
+	}
+}
+
+@media (min-width: 992px) {
+	.container {
+		width: 970px;
+	}
+
+	.col-md-6, .col-md-12 {
+		float: left;
+		width: 50%;
+	}
+
+	.col-md-12 {
+		width: 100%;
+	}
+}
+
+@media (min-width: 1200px) {
+	.container {
+		width: 1170px;
+	}
+}
+
+@media screen and (max-width:  991px) {
+	.col-md-6 {
+		padding-top: 5px;
+		padding-bottom: 15px;	
+	}
+
+	.home-account {
+		text-align: center;
+		display: block;
+		width: 50%;
+	}
+}
+
+@media screen and (max-width: 568px) {
+
+	.home-account {
+		text-align: center;
+		display: block;
+    	width: 50%;
+	}
+}

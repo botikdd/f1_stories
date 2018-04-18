@@ -1,0 +1,29 @@
+{
+  "name": "f1stories",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "connect": "^3.6.0",
+    "cookie-parser": "^1.4.3",
+    "ejs": "^2.5.6",
+    "ejs-var": "^1.0.0",
+    "express": "^4.15.2",
+    "html": "^1.0.0",
+    "formidable": "^1.1.1",
+    "morgan": "^1.8.1",
+    "mysql": "^2.13.0",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.com/botikd/f1_stories.git"
+  },
+  "author": "Botond Lazar",
+  "license": "ISC"
+}
